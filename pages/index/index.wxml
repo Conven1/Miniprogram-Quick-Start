@@ -1,7 +1,8 @@
 <!--index.wxml-->
-<navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<navigation-bar title="首页" back="{{false}}" color="black" background="#FFF"></navigation-bar>
 <scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    Hello World
-  </view>
+    <view class="container">
+        <view> Hello {{name}}! </view>
+        <button bindtap="changeName"> Click me! </button>
+    </view>
 </scroll-view>
